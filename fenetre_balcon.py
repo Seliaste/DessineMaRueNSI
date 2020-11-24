@@ -15,7 +15,7 @@ def fenetre_balcon(x,y):
     rectangle(x,y,30,50)
     # balcon
     for i in range(10):
-        rectangle(x+3*i,y,3,20)
+        rectangle(x+(3*i)-15,y,3,20)
 
 
 
