@@ -1,6 +1,7 @@
 import turtle
 from rectangle import rectangle
 
+
 def facade(x, y_sol, couleur, niveau):
     '''
     Paramètres :
@@ -11,7 +12,40 @@ def facade(x, y_sol, couleur, niveau):
     remarque :
         Facade dessine une facade sans les élements interieurs
     '''
-    pass
+    h=60
+    turtle.color(couleur)
+    if niveau == 0:
+        turtle.up()
+        turtle.goto(x,y_sol)
+        turtle.pendown()
+        turtle.begin_fill()
+        rectangle(x,y_sol,140,h)
+    if niveau == 1:
+        turtle.up()
+        turtle.goto(x,y_sol+h)
+        turtle.pendown()
+        turtle.begin_fill()
+        rectangle(x,y_sol+h,140,h)
+    if niveau == 2:
+        turtle.up()
+        turtle.goto(x,y_sol+h*2)
+        turtle.pendown()
+        turtle.begin_fill()
+        rectangle(x,y_sol+h*2,140,h)
+    if niveau == 3:
+        turtle.up()
+        turtle.goto(x,y_sol+h*3)
+        turtle.pendown()
+        turtle.begin_fill()
+        rectangle(x,y_sol+h*3,140,h)
+    if niveau == 4:
+        turtle.up()
+        turtle.goto(x,y_sol+h*4)
+        turtle.pendown()
+        turtle.begin_fill()
+        rectangle(x,y_sol+h*4,140,h)
+    turtle.end_fill()
+
 
 if __name__ == '__main__':
     facade(0,0,"red",0)
