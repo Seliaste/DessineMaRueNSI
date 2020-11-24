@@ -9,8 +9,16 @@ def toit1(x, y_sol, niveau):
     Cette fonction dessine un toit triangulaire noir de base 160 pixels
     et de hauteur centrale 40 pixels
     '''
-    pass
-
+    turtle.fillcolor("black")
+    turtle.begin_fill()
+    turtle.setposition (x,y_sol)
+    turtle.forward(160)
+    turtle.left(155)
+    turtle.forward(89)
+    turtle.left(50)
+    turtle.forward(89)
+    turtle.left(155)
+    turtle.end_fill()
 
 if __name__ == '__main__':
     toit1(0,0,0)

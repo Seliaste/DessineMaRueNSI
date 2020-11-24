@@ -10,7 +10,13 @@ def fenetre(x,y):
         dessine une fenetre de 30 pixels sur 30 pixels
 
     '''
-    pass
+    turtle.setposition(x,y)
+    turtle.pendown()
+    for i in range(4):
+        turtle.forward(30)
+        turtle.left(90)
+    turtle.penup()
+
 
 if __name__ == '__main__':
     fenetre(0,0)
