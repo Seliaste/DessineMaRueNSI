@@ -11,12 +11,9 @@ def fenetre(x,y):
 
     '''
     turtle.setposition(x,y)
-    turtle.forward(15)
-    turtle.left(90)
-    for i in range(3):
+    for i in range(4):
         turtle.forward(30)
         turtle.left(90)
-    turtle.forward(15)
 
 
 if __name__ == '__main__':
