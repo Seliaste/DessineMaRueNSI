@@ -11,15 +11,11 @@ def fenetre_balcon(x,y):
         Dessine une porte-fenetre avec balcon en 2 temps: la porte fenetre de 30 pixels de large par 50 pixels de hauteur
         puis le balcon
     '''
-    # porte-fenetre
-
-    pass
-
-
+    #fenetre
+    rectangle(x,y,30,50)
     # balcon
-
-
-    pass
+    for i in range(10):
+        rectangle(x+3*i,y,3,20)
 
 
 
