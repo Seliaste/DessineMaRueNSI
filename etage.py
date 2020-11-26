@@ -3,6 +3,7 @@ from random import shuffle,randint
 from fenetre import fenetre
 from fenetre_balcon import fenetre_balcon
 import turtle
+
 def etage(x, y_sol, couleur, niveau):
     '''
     Paramètres
@@ -13,14 +14,27 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
+    
     # Dessine la facade
     facade(x,y_sol,couleur,niveau)
     i = randint(1,2)
     print(i)
     if i == 1:
-        fenetre(x,y)
+        fenetre(x-60,y_sol+niveau*60+10)
     elif i == 2:
-        fenetre_balcon(x,y)
+        fenetre_balcon(x-60,y_sol+niveau*60+10)
+    i = randint(1,2)
+    print(i)
+    if i == 1:
+        fenetre(x-20,y_sol+niveau*60+10)
+    elif i == 2:
+        fenetre_balcon(x-20,y_sol+niveau*60+10)
+    i = randint(1,2)
+    print(i)
+    if i == 1:
+        fenetre(x+30,y_sol+niveau*60+10)
+    elif i == 2:
+        fenetre_balcon(x+30,y_sol+niveau*60+10)
         
 
 if __name__ == '__main__':
