@@ -24,6 +24,7 @@ def fenetre(x,y):
         turtle.left(90)
         turtle.forward(30)
     turtle.end_fill()
+    turtle.left(90)
 
 
 if __name__ == '__main__':

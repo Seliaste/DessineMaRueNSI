@@ -15,6 +15,7 @@ def immeuble(x, y_sol):
     Cette fonction dessine un immeuble Le nombre d'étage est compris aléatoirement entre 0 et 4
     La couleur de la façade et la couleur de la porte sont tirées au hasard
     '''
+    turtle.colormode(255)
     # Nombre d'étage (aléatoire)
 
     nombre_etages=randint(0,4)
@@ -30,7 +31,7 @@ def immeuble(x, y_sol):
 
     # Dessin des étages
     for i in range (nombre_etages):
-        etage(x, y_sol+60*i, couleur, niveau)
+        etage(x, y_sol+60*i, couleur_facade, i)
 
     # Dessin du toit
 
