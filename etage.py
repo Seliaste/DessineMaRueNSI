@@ -3,7 +3,6 @@ from random import shuffle,randint
 from fenetre import fenetre
 from fenetre_balcon import fenetre_balcon
 import turtle
-
 def etage(x, y_sol, couleur, niveau):
     '''
     Paramètres
@@ -14,142 +13,15 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
-    # dessin des murs
-    facade(x,y_sol,c_facade,c_porte)
-    # Construit les 3 éléments (1 porte et 2 fenetres)
-    i = 3 #randint(1,3)
+    # Dessine la facade
+    facade(x,y_sol,couleur,niveau)
+    i = randint(1,2)
     print(i)
     if i == 1:
-        penup()
-        forward(10)
-        left(90)
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        penup()
-
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        penup()
-        
-        forward(35)
-        right(90)
-        forward(10)
-        left(90)
-        pendown()
-        forward(30)
-        left(90)
-        forward(50)
-        left(90)
-        forward(30)
-        left(90)
-        forward(50)
-        penup()
-
-        print(1)
+        fenetre(x,y)
     elif i == 2:
-        penup()
-        forward(10)
-        left(90)
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        penup()
-
-        forward(10)
-        right(90)
-        forward(10)
-        left(90)
-        pendown()
-        forward(30)
-        left(90)
-        forward(50)
-        left(90)
-        forward(30)
-        left(90)
-        forward(50)
-        left(90)
-        forward(30)
-        penup()
-
-        forward(35)
-        left(90)
-        forward(10)
-        right(90)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        penup()
-        print(2)
-
-
-    elif i == 3:
-        penup()
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(50)
-        left(90)
-        forward(30)
-        left(90)
-        forward(50)
-        left(90)
-        forward(30)
-        penup()
-
-        forward(35)
-        left(90)
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        penup()
-
-        forward(10)
-        pendown()
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        left(90)
-        forward(30)
-        penup()      
-        print("i=3")
-    # dessin des 3 Eléments
-    pass
+        fenetre_balcon(x,y)
+        
 
 if __name__ == '__main__':
     etage(0,0,"red",0)
