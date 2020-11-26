@@ -12,7 +12,7 @@ def sol(y_sol):
     '''
     turtle.up()
     turtle.pensize(3)
-    trait(-400,-200,400,-200)
+    trait(-400,-202,400,-202)
     
 
 
