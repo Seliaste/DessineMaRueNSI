@@ -38,6 +38,6 @@ def etage(x, y_sol, couleur, niveau):
         
 
 if __name__ == '__main__':
-    etage(0,0,"green",0)
+    etage(0,0,"blue",0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
