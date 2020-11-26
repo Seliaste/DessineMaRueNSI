@@ -9,7 +9,9 @@ def rectangle(x,y,w,h):
     Cette fonction dessine un rectangle. Le point de coordonnées (x,y) est
     sur le côté en bas au milieu
     '''
+    turtle.up()
     turtle.goto(x-(w/2),y)
+    turtle.down()
     turtle.forward(w)
     turtle.left(90)
     turtle.forward(h)
@@ -21,6 +23,6 @@ def rectangle(x,y,w,h):
     
 
 if __name__ == '__main__':
-    rectangle(0,0,150,100)
+    rectangle(50,50,150,100)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
