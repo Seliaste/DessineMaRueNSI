@@ -21,8 +21,9 @@ def rdc(x, y_sol, c_facade, c_porte):
     # Dessine la facade
     facade(x,y_sol,c_facade,c_porte)
     # Construit les 3 éléments (1 porte et 2 fenetres)
-    i = 3 #randint(1,3)
-    print(i)
+
+    i = 1 #randint(1,3)
+    """print(i)
     if i == 1:
         penup()
         forward(10)
@@ -152,6 +153,47 @@ def rdc(x, y_sol, c_facade, c_porte):
         forward(30)
         penup()      
         print("i=3")
+    """
+
+    if i == 1:
+        fenetre(x-40,10)
+        penup()
+
+        pendown()
+        fenetre(x,10)
+        penup()
+
+        pendown()
+        porte(x+40,0,couleur)
+        penup()
+
+    elif i == 2:
+        fenetre(x-40,10)
+        penup()
+
+        pendown()
+        porte(x,0,couleur)
+        penup()
+
+        pendown()
+        fenetre(x+40,10)
+        penup()
+        print(2)
+
+    elif i == 3:
+        porte(x-40,0)
+        penup()
+
+        pendown()
+        fenetre(x,10)
+        penup()
+
+        pendown()
+        fenetre(x+40,10)
+        penup()      
+        print(3)
+
+
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")
