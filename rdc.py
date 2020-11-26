@@ -18,6 +18,7 @@ def rdc(x, y_sol, c_facade, c_porte):
         D'abord la façade
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
+    turtle.colormode(255)
     # Dessine la facade
     facade(x,y_sol,c_facade,c_porte)
     # Construit les 3 éléments (1 porte et 2 fenetres)
@@ -181,7 +182,7 @@ def rdc(x, y_sol, c_facade, c_porte):
         print(2)
 
     elif i == 3:
-        porte(x-40,0)
+        porte(x-40,0,couleur)
         penup()
 
         pendown()
