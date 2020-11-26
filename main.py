@@ -17,6 +17,7 @@ def main():
     for i in range(4):
         turtle.pensize(1)
         immeuble(-220+i*160,y_sol)
+        
 
 
     # On ferme la fenêtre s'il y a un clique gauche
