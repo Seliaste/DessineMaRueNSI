@@ -20,19 +20,19 @@ def etage(x, y_sol, couleur, niveau):
     i = randint(1,2)
     print(i)
     if i == 1:
-        fenetre(x-40,y_sol+niveau*60+10)
+        fenetre(x-40,y_sol+niveau*60+20)
     elif i == 2:
         fenetre_balcon(x-40,y_sol+niveau*60+10)
     i = randint(1,2)
     print(i)
     if i == 1:
-        fenetre(x,y_sol+niveau*60+10)
+        fenetre(x,y_sol+niveau*60+20)
     elif i == 2:
         fenetre_balcon(x,y_sol+niveau*60+10)
     i = randint(1,2)
     print(i)
     if i == 1:
-        fenetre(x+40,y_sol+niveau*60+10)
+        fenetre(x+40,y_sol+niveau*60+20)
     elif i == 2:
         fenetre_balcon(x+40,y_sol+niveau*60+10)
         
