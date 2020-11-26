@@ -14,7 +14,8 @@ def facade(x, y_sol, couleur, niveau):
         Facade dessine une facade sans les élements interieurs
     '''
     h=60
-    turtle.color(90.0,10.0,10.0)
+    turtle.colormode(255)
+    turtle.color(couleur)
     if niveau == 0:
         turtle.up()
         turtle.goto(x,y_sol)
