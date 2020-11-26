@@ -21,6 +21,7 @@ def toit2(x, y_sol, niveau):
     turtle.forward(140)
     turtle.left(90)
     turtle.forward(10)
+    turtle.left(90)
     turtle.end_fill()
     
     
