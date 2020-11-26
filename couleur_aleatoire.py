@@ -9,4 +9,4 @@ def couleur_aleatoire():
     r = randint(0,255)
     v = randint(0,255)
     b = randint(0,255)
-    return(r,v,b)
+    return r,v,b
