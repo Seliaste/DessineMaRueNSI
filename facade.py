@@ -1,5 +1,6 @@
 import turtle
 from rectangle import rectangle
+from couleur_aleatoire import couleur_aleatoire
 
 
 def facade(x, y_sol, couleur, niveau):
@@ -48,6 +49,6 @@ def facade(x, y_sol, couleur, niveau):
 
 
 if __name__ == '__main__':
-    facade(70,70,"red",0)
+    facade(70,70,couleur_aleatoire(),0)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
