@@ -17,7 +17,7 @@ def fenetre(x,y):
     turtle.fillcolor(couleur2)
     turtle.penup() #on place le pinceau à la bonne position
     turtle.setposition(x-15,y) #c'est-à-dire 15 pixels avant l'abscisse vu que celle-ci correspond à la moitié de la fenêtre
-    turtle.right(90) #on oriente le curseur 
+    turtle.right(90) #on oriente le curseur
     turtle.pendown() #là on peut commencer à tracer
     turtle.begin_fill()
     for i in range(4):  #on trace nos quatre bords consécutifs

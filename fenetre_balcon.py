@@ -12,7 +12,10 @@ def fenetre_balcon(x,y):
         puis le balcon
     '''
     #fenetre
+    turtle.fillcolor("white")
+    turtle.begin_fill()
     rectangle(x,y,30,50)
+    turtle.end_fill()
     # balcon
     for i in range(10):
         rectangle(x+(3*i)-15,y,3,20)
