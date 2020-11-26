@@ -31,7 +31,7 @@ def immeuble(x, y_sol):
 
     # Dessin des étages
     for i in range (nombre_etages):
-        etage(x, y_sol+60*i, couleur, i)
+        etage(x, y_sol+60*i, couleur_facade, i)
 
     # Dessin du toit
 
