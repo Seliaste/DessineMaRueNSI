@@ -21,6 +21,7 @@ def toit1(x, y_sol, niveau):
     turtle.forward(89) #on avance de 89 
     turtle.left(155) #on tourne de 155 degrees
     turtle.end_fill() #on fini le remplissage
+    turtle.up() #on leve le crayon
 
 if __name__ == '__main__':
     toit1(70,70,0)
