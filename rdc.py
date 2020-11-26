@@ -151,7 +151,7 @@ def rdc(x, y_sol, c_facade, c_porte):
         left(90)
         forward(30)
         penup()      
-        print(3)
+        print("i=3")
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")
