@@ -25,40 +25,40 @@ def rdc(x, y_sol, c_facade, c_porte):
 
     i = randint(1,3)
     if i == 1:
-        fenetre(x-40,10)
+        fenetre(x-40,y_sol+10)
         penup()
 
         pendown()
-        fenetre(x,10)
+        fenetre(x,y_sol+10)
         penup()
 
         pendown()
-        porte(x+40,0,"red")
+        porte(x+40,y_sol,c_porte)
         penup()
 
     elif i == 2:
-        fenetre(x-40,10)
+        fenetre(x-40,y_sol+10)
         penup()
 
         pendown()
-        porte(x,0,"red")
+        porte(x,y_sol,c_porte)
         penup()
 
         pendown()
-        fenetre(x+40,10)
+        fenetre(x+40,y_sol+10)
         penup()
         print(2)
 
     elif i == 3:
-        porte(x-40,0,"red")
+        porte(x-40,y_sol,c_porte)
         penup()
 
         pendown()
-        fenetre(x,10)
+        fenetre(x,y_sol+10)
         penup()
 
         pendown()
-        fenetre(x+40,10)
+        fenetre(x+40,y_sol+10)
         penup()      
         print(3)
 
