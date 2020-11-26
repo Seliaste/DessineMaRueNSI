@@ -10,9 +10,9 @@ def toit1(x, y_sol, niveau):
     et de hauteur centrale 40 pixels
     '''
     turtle.up() #on leve le crayon
+    turtle.setposition (x,y_sol) #on se met a la position donne dans toit
     turtle.fillcolor("black") #on remplie le dessin qui va etre fait
     turtle.begin_fill() #on commence le remplissage
-    turtle.setposition (x,y_sol) #on se met a la position donne dans toit
     turtle.down() #on ecrit
     turtle.forward(160) #on avance en avant de 160
     turtle.left(155) #on tourne de 155 degrees vert la la gauche
