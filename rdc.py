@@ -1,6 +1,7 @@
 from facade import facade
 from random import shuffle
 from porte import porte
+from porte2 import porte2
 from fenetre import fenetre
 import turtle
 from turtle import*
@@ -45,9 +46,9 @@ def rdc(x, y_sol, c_facade, c_porte):
 
         pendown()
         if j == 1 :
-            porte(x+40,y_sol,c_porte)
+            porte(x,y_sol,c_porte)
         else:
-            porte2(x+40,y_sol,c_porte)
+            porte2(x,y_sol,c_porte)
         penup()
 
         pendown()
@@ -57,9 +58,9 @@ def rdc(x, y_sol, c_facade, c_porte):
 
     elif i == 3:
         if j == 1 :
-            porte(x+40,y_sol,c_porte)
+            porte(x-40,y_sol,c_porte)
         else:
-            porte2(x+40,y_sol,c_porte)
+            porte2(x-40,y_sol,c_porte)
         penup()
 
         pendown()

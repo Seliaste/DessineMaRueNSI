@@ -1,6 +1,7 @@
 import turtle
 from rectangle import rectangle
 from trait import trait
+from couleur_aleatoire import couleur_aleatoire
 
 def fenetre_balcon(x,y):
     '''
@@ -12,11 +13,13 @@ def fenetre_balcon(x,y):
         puis le balcon
     '''
     #fenetre
-    turtle.fillcolor("white")
+    turtle.colormode(255)
+    turtle.fillcolor(couleur_aleatoire())
     turtle.begin_fill()
     rectangle(x,y,30,50)
     turtle.end_fill()
     # balcon
+    turtle.pencolor('black')
     for i in range(10):
         rectangle(x+(3*i)-15,y,3,20)
     turtle.up()

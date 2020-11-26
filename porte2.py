@@ -14,16 +14,18 @@ def porte2(x,y,couleur):
     '''
     turtle.fillcolor(couleur)
     turtle.penup()
+    turtle.goto(x-15,y)
+    turtle.pendown()
     turtle.begin_fill()
     turtle.forward(30)
     turtle.left(90)
     turtle.forward(40)
     turtle.circle(15,180)
     turtle.forward(40)
-    turtle.pendown()
     turtle.end_fill()
+    turtle.left(90)
 
 if __name__ == '__main__':
-    porte2(0,0,"red")
+    porte2(70,70,"red")
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
