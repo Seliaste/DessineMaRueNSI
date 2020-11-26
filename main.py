@@ -8,7 +8,7 @@ from immeuble import immeuble
 
 def main():
     turtle.setup(800, 600)
-    turtle.speed(10)
+    turtle.speed(50)
     # On définit la hauteur du sol
     y_sol = -200
     # Dessin du sol de la rue
