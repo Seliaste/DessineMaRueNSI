@@ -16,6 +16,9 @@ def fenetre_balcon(x,y):
     # balcon
     for i in range(10):
         rectangle(x+(3*i)-15,y,3,20)
+    turtle.up()
+    turtle.goto(x,y)
+    turtle.down()
 
 
 

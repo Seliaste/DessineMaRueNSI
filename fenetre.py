@@ -10,6 +10,7 @@ def fenetre(x,y):
         dessine une fenetre de 30 pixels sur 30 pixels
 
     '''
+    turtle.colormode(255)
     couleur1 = couleur_aleatoire()
     couleur2 = couleur_aleatoire()
     turtle.pencolor(couleur1)
@@ -23,6 +24,7 @@ def fenetre(x,y):
         turtle.left(90)
         turtle.forward(30)
     turtle.end_fill()
+    turtle.left(90)
 
 
 if __name__ == '__main__':
