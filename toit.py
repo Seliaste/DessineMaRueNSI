@@ -14,9 +14,9 @@ def toit(x, y_sol, niveau):
     '''
     n = randint(1,2)
     if n == 1 :
-        toit1(x-70,y_sol+niveau*60,niveau)
+        toit1(x-70,y_sol+niveau*60+60,niveau)
     if n == 2 :
-        toit2(x-70,y_sol+niveau*60,niveau)
+        toit2(x-70,y_sol+niveau*60+60,niveau)
 
 if __name__ == '__main__':
     toit(0,0,0)
